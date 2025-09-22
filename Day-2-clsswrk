@@ -1,0 +1,11 @@
+INSERT INTO `students info`(`Id`, `Name`, `Age`, `Department`, `Grade`) VALUES (1,'Rajan',22,'Computer Science',95), (2,'Dominic',25,'Physics',79), (3,'Varkey',23,'Biology',65), (4,'Sagar',22,'Commerce',85);
+
+SELECT * FROM `students info` WHERE Age>20;
+
+SELECT * FROM `students info` WHERE Department='Computer Science';
+
+SELECT * FROM `students info` WHERE Department='Physics';
+
+SELECT * FROM `students info` WHERE Grade = 90;
+
+SELECT * FROM `students info` WHERE Grade BETWEEN 70 AND 90;
