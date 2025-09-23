@@ -1,0 +1,14 @@
+INSERT INTO `training center` VALUES (1, 'Alice', 'Web Development', 5000, 'inactive'), (2, 'Bob', 'Data Science', 7000, 'inactive'), 
+(3, 'Charlie', 'UI/UX Design', 4000, 'active');
+
+SELECT * FROM `training center` WHERE 'Fees Paid' > 5000;
+
+UPDATE `training center` SET `Status`='Active' WHERE Course = 'Web Development';
+
+UPDATE `training center` SET `Fees Paid`='Fees Paid' + 1000 WHERE Course = 'Data Science';
+
+UPDATE `training center` SET `Fees Paid`= 'Fees Paid' - 500,`Status`='Inactive' WHERE Id = 3;
+
+DELETE FROM `training center` WHERE Id = 2;
+
+DELETE FROM `training center` WHERE Status = 'Inactive';
