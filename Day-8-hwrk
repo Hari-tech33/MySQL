@@ -1,0 +1,13 @@
+CREATE DATABASE BookStoreDB;
+
+USE bookstoredb;
+
+CREATE TABLE `bookstoredb`.`authors`( author_id INT PRIMARY KEY, name VARCHAR(100), country VARCHAR(50) );
+
+CREATE TABLE `bookstoredb`.`books`( book_id INT PRIMARY KEY, title VARCHAR(100), price INT, author_id INT );
+
+ALTER TABLE books ADD published_year INT;
+
+TRUNCATE TABLE books;
+
+DROP DATABASE bookstoredb;
